@@ -92,16 +92,20 @@
           <div class="swiper-wrapper align-items-center">
 
             <div class="swiper-slide">
-              <img src="assets/img/portfolio/app.jpg" alt="">
+              <img src="assets/img/portfolio/Image1.png" alt="">
             </div>
 
             <div class="swiper-slide">
-              <img src="assets/img/portfolio/site1.png" alt="">
+              <img src="assets/img/portfolio/Image2.png" alt="">
             </div>
 
             <div class="swiper-slide">
-              <img src="assets/img/portfolio/site2.png" alt="">
+              <img src="assets/img/portfolio/Capture d'écran 2025-03-23 004145.png" alt="">
             </div>
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/Capture d'écran 2025-03-26 124151.png" alt="">
+            </div>
+          
 
 
           </div>
@@ -114,31 +118,69 @@
 
           <div class="col-lg-8" data-aos="fade-up">
             <div class="portfolio-description">
-              <h2>This is an example of portfolio details</h2>
+              <h2>Detection_des_maladies_des_plantes_avec_AI</h2>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia.
-                Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia
-                accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt
-                eius.
-              </p>
-              <p>
-                Amet consequatur qui dolore veniam voluptatem voluptatem sit. Non aspernatur atque natus ut cum nam et.
-                Praesentium error dolores rerum minus sequi quia veritatis eum. Eos et doloribus doloremque nesciunt
-                molestiae laboriosam.
-              </p>
 
-
-
-              <p>
-                Impedit ipsum quae et aliquid doloribus et voluptatem quasi. Perspiciatis occaecati earum et magnam
-                animi. Quibusdam non qui ea vitae suscipit vitae sunt. Repudiandae incidunt cumque minus deserunt
-                assumenda tempore. Delectus voluptas necessitatibus est.
-              </p>
-
-              <p>
-                Sunt voluptatum sapiente facilis quo odio aut ipsum repellat debitis. Molestiae et autem libero.
-                Explicabo et quod necessitatibus similique quis dolor eum. Numquam eaque praesentium rem et qui
-                nesciunt.
+              <strong> Rapport de Projet </strong> : Détection des Maladies des Plantes avec CNN <br>
+                1. Introduction <br>
+                La détection précoce des maladies des plantes est essentielle pour assurer une agriculture durable et
+                réduire les pertes de production. L'utilisation des techniques de Deep Learning, notamment les réseaux
+                de neurones convolutionnels (CNN), permet d'automatiser ce processus avec une grande précision. Ce
+                projet vise à développer un modèle de CNN capable de classifier les plantes en bonne santé et celles
+                affectées par des maladies.
+<br>
+                2. Chargement et Prétraitement des Images
+                <br> 
+                2.1 Chargement des Images
+                <br>
+                Les données proviennent du jeu de données PlantVillage, qui contient des images de plantes avec
+                différentes maladies ainsi que des plantes saines. Ces images seront utilisées pour entraîner et tester
+                le modèle.
+<br>
+                2.2 Prétraitement des Images
+                <br>
+                Les images subissent plusieurs étapes de prétraitement :
+<br>
+                Redimensionnement : Ajustement à une taille standard (ex: 128x128 pixels) pour assurer une uniformité
+                des entrées.
+                Normalisation : Mise à l'échelle des valeurs des pixels entre 0 et 1 pour améliorer l'apprentissage.
+                Augmentation des données : Rotation, retournement et ajustement de luminosité pour augmenter la
+                robustesse du modèle. <br>
+                3. Construction du Modèle CNN <br>
+                Le modèle de réseau de neurones convolutionnel (CNN) est conçu avec les couches suivantes :
+<br>
+                Convolution 2D : Extraction des caractéristiques visuelles.
+                MaxPooling : Réduction de la dimension des caractéristiques pour diminuer la complexité.
+                Couches denses (Fully Connected) : Classification finale des images.
+                Fonction d'activation ReLU : Introduire la non-linéarité.
+                Softmax : Prédiction des probabilités d'appartenance à chaque classe.
+                4. Entraînement du Modèle  <br>
+                Le modèle est entraîné sur un ensemble de données divisé en :
+<br>
+                Ensemble d'entraînement (80%)
+                Ensemble de validation (20%)
+                L'optimiseur Adam et la fonction de perte categorical crossentropy sont utilisés pour améliorer
+                l'apprentissage. Plusieurs époques d'entraînement sont réalisées jusqu'à atteindre une bonne précision.
+<br>
+                5. Test et Évaluation
+                <br>
+                Le modèle est testé sur un ensemble d'images inédites pour mesurer sa précision. Les métriques suivantes
+                sont utilisées :
+<br>
+                Précision (Accuracy) : Indique le taux de classification correcte.
+                Matrice de confusion : Visualisation des erreurs de classification.
+                F1-score : Équilibre entre précision et rappel.
+                6. Prédiction sur une Nouvelle Image
+                Une image externe est prétraitée et passée à travers le modèle pour obtenir une classification.
+                L'utilisateur peut ainsi obtenir un diagnostic immédiat sur l'état de la plante.
+<br>
+                7. Conclusion
+                <br>
+                Ce projet démontre l'efficacité du Deep Learning pour la détection des maladies des plantes. En
+                améliorant l'architecture du modèle et en utilisant des ensembles de données plus variés, il est
+                possible d'obtenir des performances encore meilleures.
+<br>
+                <strong>Collaborators</strong> Mohamed ait haddou , soufiane nacih
               </p>
 
             </div>
@@ -148,11 +190,9 @@
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Category</strong> Web design</li>
-                <li><strong>Client</strong> ASU Company</li>
-                <li><strong>Project date</strong> 01 March, 2020</li>
-                <li><strong>Project URL</strong> <a href="#">www.example.com</a></li>
-                <li><a href="#" class="btn-visit align-self-start">Visit Website</a></li>
+                <li><strong>Category</strong> Projet fin d'etude</li>
+                <li><strong>Project date</strong> 02/5/2025</li>
+                <li><a href="https://github.com/medaminebensalem/Detection_des_maladies_des_plantes_avec_AI" class="btn-visit align-self-start">Visit Website</a></li>
               </ul>
             </div>
           </div>
